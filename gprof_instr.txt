@@ -1,0 +1,3 @@
+# Makefile -pg 
+# ./FP_growth 2 < dataset/data9.txt
+# gprof ./FP_growth gmon.out > analysis.txt

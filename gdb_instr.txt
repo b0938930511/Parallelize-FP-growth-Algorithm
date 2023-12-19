@@ -1,0 +1,22 @@
+file ./FP_growth
+set args 2 < ibm-5000.txt
+show args
+run
+
+---- deal with core dump ----
+where: call stack
+bt full: detail
+x addr: inpect value store in addr
+
+
+p var: print out variable (can specify scope)
+break line_number: set break point
+condition break_point_num var==number: conditional break
+
+[Resuming Execution]
+s(tep) [count]: stops inside a called function
+n(ext) [count]: executes called functions
+finish: Continue execution until the current function returns.
+c(ontinue) [[filename:]lineno|function: Continue execution; only stop when a breakpoint is encountered.
+                                        If a line position is given, continue until that line is reached.
+
